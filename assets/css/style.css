@@ -1,0 +1,47 @@
+/* header */
+.header {
+  position: fixed;
+  z-index: 1;
+  top: 30px;
+  width: 100%;
+}
+
+.header .row .col-xl-12 {
+  background: white;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+
+.header .row .col-xl-12 .logo {
+  top: 11px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.header .row .col-xl-12 .nav .pink a {
+  color: var(--color-text-pink);
+}
+
+.header .row .col-xl-12 .nav-item a {
+  display: inline-block;
+  padding: 25px 20px;
+  color: var(--color-black);
+  font-size: 15px;
+}
+
+/* end header */
+
+/* section1 */
+.section1 {
+  background-image: url(../img/banner-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
+}
