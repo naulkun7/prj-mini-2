@@ -38,7 +38,7 @@ a:hover {
   font-size: 15px;
   color: var(--color-text);
   letter-spacing: 0.8px;
-  margin: 0 200px;
+  margin: 0 250px;
 }
 
 @media (max-width: 991px) {
