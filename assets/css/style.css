@@ -1,29 +1,34 @@
+::-moz-selection {
+  background: var(--color-pink);
+}
+
 ::selection {
   background: var(--color-pink);
 }
 
 /* button  */
-.button-pink {
+.button {
   padding: 10px 40px;
   border-radius: 40px;
   color: white;
-  background-color: var(--color-pink);
+  transition: all 0.4s;
+}
+.button:hover {
+  color: white;
+  transition: all 0.4s;
 }
 
+.button-pink {
+  background-color: var(--color-pink);
+}
 .button-pink:hover {
-  color: white;
   background-color: var(--color-purple);
 }
 .button-purple {
-  padding: 10px 40px;
-  border-radius: 40px;
-  color: white;
-  background-color: var(--color-pink);
-}
-
-.button-purple:hover {
-  color: white;
   background-color: var(--color-purple);
+}
+.button-purple:hover {
+  background-color: var(--color-pink);
 }
 /* end button  */
 
@@ -49,10 +54,6 @@
   margin-left: 10px;
   display: flex;
   align-items: center;
-}
-
-.header .row .col-12 .nav .pink a {
-  color: var(--color-text-pink);
 }
 
 .header .row .col-12 .nav-item a {
@@ -194,6 +195,7 @@
 .section3 .row .left-item img {
   width: 280px;
   height: auto;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -247,6 +249,7 @@
 .section4 .row .left-item img {
   width: 280px;
   height: auto;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -278,3 +281,54 @@
     margin-top: 15px;
   }
 }
+
+/* section 6 */
+.section6 .row .inner-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+}
+
+.section6 .row .inner-tag .tag-img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.section6 .row .inner-tag .tag-content {
+  color: var(--color-text);
+  letter-spacing: 0.8px;
+}
+.section6 .row .inner-tag .tag-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.section6 .row .inner-tag .tag-info .ava {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 26px;
+}
+
+.section6 .row .inner-tag .tag-info .info {
+  color: var(--color-black);
+}
+.section6 .row .inner-tag .tag-info .info .role {
+  color: var(--color-pink);
+}
+/* end section 6 */
+
+/* section 7 */
+.section7 {
+  background: #f2f2fe;
+}
+
+/* end section 7 */
