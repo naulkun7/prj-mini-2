@@ -8,6 +8,14 @@
   --color-black: #1e1e1e;
 }
 
+::-moz-selection {
+  background: var(--color-pink);
+}
+
+::selection {
+  background: var(--color-pink);
+}
+
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -19,6 +27,32 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+/* button  */
+.button {
+  padding: 10px 40px;
+  border-radius: 40px;
+  color: white;
+  transition: all 0.4s;
+}
+.button:hover {
+  color: white;
+  transition: all 0.4s;
+}
+
+.button-pink {
+  background-color: var(--color-pink);
+}
+.button-pink:hover {
+  background-color: var(--color-purple);
+}
+.button-purple {
+  background-color: var(--color-purple);
+}
+.button-purple:hover {
+  background-color: var(--color-pink);
+}
+/* end button  */
 
 /* box title */
 .box-title {
