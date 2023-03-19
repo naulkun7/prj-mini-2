@@ -6,6 +6,15 @@
   --color-pink: #f6589e;
   --color-purple: #8261ee;
   --color-black: #1e1e1e;
+  --color-bg: #f2f2fe;
+}
+
+::-moz-selection {
+  background: var(--color-pink);
+}
+
+::selection {
+  background: var(--color-pink);
 }
 
 body {
@@ -47,3 +56,29 @@ a:hover {
   }
 }
 /* end box title */
+
+/* button  */
+.button {
+  padding: 10px 40px;
+  border-radius: 40px;
+  color: white;
+  transition: all 0.4s;
+}
+.button:hover {
+  color: white;
+  transition: all 0.4s;
+}
+
+.button-pink {
+  background-color: var(--color-pink);
+}
+.button-pink:hover {
+  background-color: var(--color-purple);
+}
+.button-purple {
+  background-color: var(--color-purple);
+}
+.button-purple:hover {
+  background-color: var(--color-pink);
+}
+/* end button  */
