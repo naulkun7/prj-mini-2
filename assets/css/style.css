@@ -59,6 +59,7 @@
     display: none;
   }
 }
+
 /* end header */
 
 /* section1 */
@@ -109,6 +110,15 @@
   padding: 40px;
 }
 
+@keyframes go-up {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 .section2 .row .inner-item {
   display: flex;
   flex-direction: column;
@@ -120,6 +130,7 @@
   cursor: pointer;
   padding: 15px;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+  animation: go-up 2s ease-out;
 }
 
 .section2 .row .inner-item:hover > .icon {
@@ -168,11 +179,23 @@
   align-content: center;
 }
 
+@keyframes left-to-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .section3 .row .left-item img {
   width: 280px;
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
+  animation: left-to-right 2s ease-out;
 }
 
 .section3 .row .right-item {
@@ -222,11 +245,23 @@
   align-content: center;
 }
 
+@keyframes right-to-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .section4 .row .left-item img {
   width: 280px;
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
+  animation: right-to-left 2s ease-out;
 }
 
 .section4 .row .right-item {
@@ -285,6 +320,10 @@
   border-radius: 20px;
   position: relative;
   z-index: 1;
+  transition: transform 0.5s;
+}
+.section5 .row2 .tag:hover {
+  transform: translateY(-10%);
 }
 .section5 .row2 .tag::before {
   content: "";
@@ -442,6 +481,10 @@
 }
 .section8 .inner-wrap .item {
   padding: 100px 40px;
+  transition: transform 0.6s;
+}
+.section8 .inner-wrap .item:hover {
+  transform: translateY(-10%);
 }
 
 .section8 .inner-wrap .item-img img {
@@ -602,17 +645,35 @@
   background: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
 }
 
-.footer .list-social {
-  list-style-type: none;
+.footer .inner-upper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
-.footer .list-social .social {
-  margin: 20px;
-  width: 20px;
-  height: 20px;
-  background-color: white;
+.footer .inner-upper .icon i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 30px 15px 15px 15px;
+  background: white;
+  color: var(--color-purple);
+  transition: all 0.6s;
 }
+.footer .inner-upper .icon i:hover {
+  background: var(--color-pink);
+  color: white;
+  transition: all 0.6s;
+}
+.footer .inner-lower {
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 20px;
+  font-size: 13px;
+  color: white;
+}
+
 /* end footer */

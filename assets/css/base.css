@@ -9,6 +9,10 @@
   --color-bg: #f2f2fe;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::-moz-selection {
   background: var(--color-pink);
 }
